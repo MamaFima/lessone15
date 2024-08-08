@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нейроастролог</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('fon.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .accordion-body {
+      color: black; /* Убедимся, что текст в аккордеоне виден */
+    }
+    .lead {
+      color: lightblue; /* Цвет текста описания */
+    }
+    .card-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    .card {
+      height: 100%;
+    }
+    .card-img-top {
+      height: 300px; /* Высота изображений в карточках */
+      object-fit: cover;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-title, .card-text {
+      color: black; /* Цвет текста внутри карточек */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="bg-dark py-3">
+    <div class="container">
+      <h1 class="display-4">Нейроастролог</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Описание -->
+  <section class="py-5">
+    <div class="container">
+      <p class="lead">Нейроастролог — это специализированная нейросеть по профессиональной астрологии. С помощью нейроастролога вы сможете не только узнать свои особенности и таланты, но также сможете составить гороскоп любого события - покупки квартиры или автомобиля, свадьбы, и даже болезни. Нейроастролог поможет вам заглянуть в будущее и лучше понять прошлое, сделать анализ прошедших событий, поможет с выводами и прогнозами будущего.</p>
+    </div>
+  </section>
+
+  <!-- Основной контент -->
+  <main class="container py-5">
+    <!-- Секция 1: Слайдер -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="9.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="10.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="11.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Секция 2: Карточки -->
+    <section class="py-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="13.jpg" class="card-img-top" alt="Соляр">
+            <div class="card-body">
+              <h5 class="card-title">Соляр</h5>
+              <p class="card-text">Соляр - это прогноз событий на год от одного дня рождения до следующего. Прогноз может строить разными способами - как по одиночной карте соляра, так и по двойной - наложением карты соляра на натальную карту. Самый полный прогноз совмещает оба этих метода.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="14.jpg" class="card-img-top" alt="Транзиты">
+            <div class="card-body">
+              <h5 class="card-title">Транзиты</h5>
+              <p class="card-text">Прогноз от месяца до года. Считается одним из самых точных методов прогнозирования, позволяет видеть события с точностью до дня и часа. Делается с помощью наложения реальной карты неба на натальную карту.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="15.jpg" class="card-img-top" alt="Анализ натальной карты">
+            <div class="card-body">
+              <h5 class="card-title">Анализ натальной карты</h5>
+              <p class="card-text">Детальный анализ натальной карты позволяет увидеть сильные и слабые стороны человека, его возможности, а также просчитать формулы тех или иных событий, чтобы понять возможны они в принципе или нет. Используются для прогноза успеха в тех или иных областях, возможных угроз, здоровья, карьеры, брака, финансов - всех сторон жизни.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция 3: Аккордеон -->
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Что делать, если я не знаю время своего рождения?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Если вам неизвестно точное время своего рождения, то делать прогнозы очень проблематично. По дате и месту рождения можно составить космограмму, она тоже очень информативна, но для точной прогностики все же нужно время рождения, причем чем точнее, тем лучше. Возможно сделать ректификацию - то есть восстановить время вашего рождения по значимым событиям вашей жизни - рождению детей, свадьбе, смерти близких родственников.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              А если астролог скажет, что мой муж мне не подходит?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Астрология не ставит диагнозов типа «подходит» или «не подходит», такие выводы могут сделать только сам человек. Астрология с помощью синастрии (астрологии совместимости) показывает, как партнеры (и не только по браку) влияют друг на друга, какие черты «подсвечивают», какие стороны жизни активизируют, каковы их потребности и ожидания от брака или партнерства, их идеалы и страхи.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Что значит «плохой гороскоп»?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Не бывает плохих или хороших гороскопов, так же как не бывает плохих или хороших событий. Это зависит от нашего отношения и восприятия. Гороскоп может быть напряженным, непростым, но это не значит, что он плохой. Мало того, в напряженных гороскопах сосредоточено много энергии, и если вы сможете проживать свой потенциал в плюс, то получите доступ к огромному источнику энергии.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bg-dark py-4">
+    <div class="container text-center">
+      <p>Контактная информация: email@example.com | Телефон: +7 123 456 7890</p>
+      <div>
+        <a href="#" class="text-white">Facebook</a> |
+        <a href="#" class="text-white">Twitter</a> |
+        <a href="#" class="text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
